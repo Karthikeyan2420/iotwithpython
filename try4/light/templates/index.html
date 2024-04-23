@@ -1,0 +1,27 @@
+<!-- led_control_app/templates/led_control_app/control_led.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control LED</title>
+    <script>
+        function turnOn() {
+            fetch("{% url 'turn_on' %}", { method: "POST", headers: { "X-CSRFToken": "{{ csrf_token }}" } })
+        }
+
+        function turnOff() {
+            fetch("{% url 'turn_off' %}", { method: "POST", headers: { "X-CSRFToken": "{{ csrf_token }}" } })
+                
+        }
+    </script>
+</head>
+<body>
+    <h1>Control LED</h1>
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
+
+
+   
+</body>
+</html>

@@ -24,8 +24,4 @@ If you're interested in learning how to combine Django, a powerful web framework
 5. Open your web browser and navigate to `http://127.0.0.1:8000/`.
 6. Use the provided buttons to turn the LED on and off.
 
-## Contributors
 
-- [karthikeyan2420](https://github.com/karthikeyan2420)
-
-Feel free to contribute to this project by forking and submitting a pull request!
